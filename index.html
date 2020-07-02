@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel='stylesheet' href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/bf164bd173.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-    <div class="root">This is root</div>
+<div class="container">
+            <div class="header">
+                <h1>THE SCORE EVALUATOR </h1>
+                <P>Enter your scores from your web development test modules(only 1 - 10) </P>
+            </div>
+        
+        <form class="form" id="form">
+            <div class="form-control">
+                <level for="htmlScore">Html Score</level>
+                <input type='number' placeholder="your score" id="htmlScore" min="1" max="100">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <level for="cssScore">Css Score</level>
+                <input type='number' placeholder="your score" id="cssScore" min="1" max="100">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <level for="jsScore">Javascript Score</level>
+                <input type='number' placeholder="your score" id="jsScore" min="1" max="100">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <level for="backendScore">Backend Score</level>
+                <input type='number' placeholder="your score" id="backendScore" min="1" max="100">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <button>Evaluate</button>
+      </form>
+</div>
     
 
 
 
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
